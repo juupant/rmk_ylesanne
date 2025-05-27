@@ -40,6 +40,26 @@ for home_departure in departure_range:
         late_probabilities.append(1)
     else:
         late_probabilities.append(0)
+# --- STEP 5: Plot ---
+plt.figure(figsize=(12, 6))
+plt.plot([t.strftime("%H:%M") for t in departure_range], late_probabilities, marker='o', linestyle='-', color='red')
+plt.xticks(rotation=45, ha='right')
+plt.title("Probability of Being Late vs. Home Departure Time", pad=20)
+plt.xlabel("Time Rita Leaves Home")
+plt.ylabel("Probability of Being Late")
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.ylim(-0.05, 1.05)
+
+# Add annotations for key points
+for i, (time, prob) in enumerate(zip(departure_range, late_probabilities)):
+    plt.annotate(f"{prob:.0f}", 
+                (time.strftime("%H:%M"), prob),
+                textcoords="offset points",
+                xytext=(0,10),
+                ha='center')
+
+plt.tight_layout()
+plt.show()
 
 
 
