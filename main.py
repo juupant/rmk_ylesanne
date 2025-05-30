@@ -51,7 +51,7 @@ for line in bus_schedule.strip().split("\n"):
 meeting_time = datetime.strptime("09:05", "%H:%M")
 walk_to_bus = timedelta(seconds=300)   # 5 minutes
 walk_from_bus = timedelta(seconds=240) # 4 minutes
-SIMULATION_RUNS = 1000  # number of simulations per departure time
+SIMULATION_RUNS = 100000   # number of simulations per departure time
 
 # --- simulate lateness ---
 departure_range = [datetime.strptime("08:00", "%H:%M") + timedelta(minutes=i) for i in range(61)]

@@ -1,0 +1,10 @@
+30% of the time the bus is on time
+70% of the time it is not on time
+of the 70%, 90% of the time it is late
+of those 90% of times, 30% of the time it is 1 minute late, 30% of the time 2 minutes late,
+ 20% of the time 3 minutes late, 10% of the time 4 minutes late, 5% of the time 5 minutes late, 
+3% of the time 6 minutes late, 2% of the time 8 minutes late, 1% of the time 10 minutes late, 
+and 1% of the time 15 minutes late.
+10% of deviation is earlier than in the schedule
+of that time 90% 1 minute early
+other 10% 2 minutes early
